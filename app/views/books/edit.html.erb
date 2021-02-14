@@ -1,0 +1,12 @@
+<h2>Editing Book</h2>
+    <%= form_with model:@book, local:true do |f| %>
+    <p>Title</p>
+    <%= f.text_field :title %>
+    <p>Body</p>
+    <%= f.text_area :body %>
+    <p>
+    <%= f.submit 'Update Book' %>
+    </p>
+    <% end %>
+    <a href="#">Show</a>
+    <a href="#">Back</a>

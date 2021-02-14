@@ -1,0 +1,26 @@
+<h1>Books</h1>
+
+<main>
+  <div class="title">
+    <h3>title</h3>
+      <% @books.each do |book| %>
+        <p><%= book.title %></p>
+      <% end %>
+  </div>
+
+  <div class="body">
+    <h3>Body</h3>
+      <% @books.each do |book| %>
+        <p><%= book.body %></p>
+      <% end %>
+  </div>
+
+  <section class="command">
+    <span>
+      <!--ここにShowとEditとDestroy（HTTPメソッドのdeleteも）入れる-->
+    </span>
+  </section>
+
+<!--ここにnewページいれたい-->
+
+</main>
