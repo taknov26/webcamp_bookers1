@@ -1,8 +1,10 @@
 <h2>Editing Book</h2>
+
     <%= form_with model:@book, local:true do |f| %>
-    <p>Title</p>
+    <%= render 'layouts/error_messages', book: f.object %>
+    <div class=text-box-title>本のタイトル</div>
     <%= f.text_field :title %>
-    <p>Body</p>
+    <div class=text-box-body>感想</div>
     <%= f.text_area :body %>
     <p>
     <%= f.submit 'Update Book' %>
